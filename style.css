@@ -81,6 +81,10 @@ html, body {
     margin-bottom: 10px;
 }
 
+.button-group i:hover{
+    color: #004aad;
+}
+
 .btn {
     background-color: #fff;
     border: none;
@@ -103,7 +107,7 @@ html, body {
 
 
 .btn:hover {
-    background-color: #c4c4c4;
+    background-color: #f5f5f5;
 }
 
 .btn.small {
@@ -132,7 +136,7 @@ html, body {
 }
 
 .btn-follow i:hover{
-    color: blue;
+    color: #004aad;
 }
 
 /* Right Content */
