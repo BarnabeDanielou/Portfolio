@@ -76,11 +76,11 @@ html, body {
 
 /* When you hover the button, change the icon color */
 .btn:hover i {
-  color: blue;
+  color: black;
 }
 
 .btn:hover span {
-  color: blue;
+  color: black;
 }
 
 .button-group {
@@ -141,7 +141,7 @@ html, body {
 }
 
 .btn-follow i:hover{
-  color: blue;
+  color: #0a66c2;
 }
 
 /* Right Content */
