@@ -1,0 +1,272 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins';
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;  /* center container horizontally */
+    align-items: center;      /* center container vertically */
+    background-color: #f9f9f9;/* optional page background */
+  }
+/* Layout */
+.container {
+    display: flex;
+    justify-content: center;    /* center cards horizontally */
+    align-items: flex-end;      /* align cards’ bottoms */
+    gap: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.1);
+    padding: 30px;
+  }
+
+/* Profile Card */
+.profile-card {
+    background-color: #e7e4e0;
+    border-radius: 15px;
+    box-shadow: 6px 6px 7px #cfcac7;
+    padding: 24px;
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/*Buttons*/
+.full-width-btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.full-width-btn .btn {
+    padding: 10px 12px; /* Smaller padding: 10px top-bottom, 12px left-right */
+    font-size: 15px;     /* Optional: slightly smaller text */
+}
+
+/* When you hover the button, change the icon color */
+.btn:hover i {
+  color: blue;
+}
+
+.btn:hover span {
+  color: blue;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    padding: 10px 12px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 15px; /* Ensure same font size everywhere */
+    color: #4a4a4a;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none; /* Remove underline on <a> */
+    font-family: inherit; /* 🔥 Force same font */
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: #f5f5f5;
+}
+
+.btn.small {
+    flex: 1;
+}
+
+
+
+/* Follow Me */
+.btn-follow {
+    color: #4a4a4a;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-follow i {
+    font-size: 24px;
+}
+
+.btn-follow i:hover{
+  color: blue;
+}
+
+/* Right Content */
+.content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* 🔥 Make gap smaller instead of negative margin */
+    padding-top: 35px; /* 🔥 Slightly more padding to push h1 down */
+}
+
+.content h1 {
+    font-size: 30px;
+    min-height: 46px; /* 🔥 Bigger minimum height */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.intro{
+    margin-bottom: 15px;
+}
+
+/* Info Card */
+.info-card {
+    background-color: #e7e4e0;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px #cfcac7;
+    padding: 15px;
+  }
+
+.info-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 14px;
+    line-height: 1.25;
+    margin-bottom: 8px;
+}
+
+strong {
+    font-weight: 600;
+}
+/* Modal background */
+.modal {
+    display: none; /* hidden by default */
+    position: fixed;
+    z-index: 1000; /* on top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* darker transparent */
+    backdrop-filter: blur(5px); /* blur effect */
+    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /* Modal content box */
+  .modal-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Buttons inside modal */
+  .modal-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .modal-buttons .btn {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+  
+  /* Hidden by default */
+.mobile-message {
+    display: none;
+  }
+  
+  /* Style the mobile fallback */
+  .mobile-message p {
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+  }
+  
+  /* On phones/tablets */
+  @media (max-width: 768px) {
+    /* Hide the full container */
+    .container {
+      display: none;
+    }
+  
+    /* Show the mobile message */
+    .mobile-message {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;       /* full viewport height */
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+  }
+  
