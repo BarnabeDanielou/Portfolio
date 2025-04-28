@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barnabé Danielou Portfolio 👋</title>
+    <meta name="description" content="Especialista en Desarrollo de Negocios Internacionales Junior">
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://barnabedanielou.github.io/Portfolio/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Barnabé Danielou Portfolio 👋">
+    <meta property="og:description" content="Especialista en Desarrollo de Negocios Internacionales Junior">
+    
+    <!-- Favicons -->
+    <link href="img/Logo1.png" rel="icon" />
+    <link href="img/Logo1.png" rel="apple-touch-icon" />
+    
+    <!-- Google Font & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Mobile Fallback Message -->
+    <div class="mobile-message">
+        <p>
+            I am enhancing my portfolio to improve its design and functionality.
+            <b>The site is not mobile-optimized; kindly view it on a laptop or desktop.
+            Kindly download my resume or contact me to discuss opportunities.</b>
+            <br>Thank you,<br>Barnabé
+        </p>
+    </div>
+
+    <main class="container">
+        <!-- Left Card -->
+        <section class="profile-card">
+            <img class="avatar" src="img/B.png" alt="Avatar">
+
+            <h2>Barnabé Danielou</h2>
+            <p class="subtitle">
+                Junior International Business<br/>
+                Development and Sales Specialist
+            </p>
+
+            <!-- Resume Button -->
+            <div class="full-width-btn">
+                <button id="open-resume-modal" class="btn">
+                    <span>Resume</span>
+                    <i class="fas fa-download"></i>
+                </button>
+            </div>
+            
+            <!-- Modal -->
+            <div id="resume-modal" class="modal">
+                <div class="modal-content">
+                    <span id="close-modal" class="close">&times;</span>
+                    <h2>Download Resume</h2>
+                    <p>Please select a language:</p>
+                    <div class="modal-buttons">
+                        <a href="pdf/Barnabe_Danielou_EN.pdf" class="btn" download>English</a>
+                        <a href="pdf/Barnabe_Danielou_MX.pdf" class="btn" download>Español</a>
+                        <a href="pdf/Barnabe_Danielou_FR.pdf" class="btn" download>Français</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two Small Buttons -->
+            <div class="button-group">
+                <a href="tel:+33680103887" class="btn small" target="_blank">
+                    <span>Call me</span>
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:danielou1306@gmail.com" class="btn small" target="_blank">
+                    <span>Email</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <!-- Follow Me Button -->
+            <a href="https://www.linkedin.com/in/barnabedanielou/" class="btn-follow" target="_blank">
+                <span>Follow me</span>
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </section>
+
+        <!-- Right Content -->
+        <section class="content">
+            <h1 id="typing-text"></h1> <!-- Only one h1 where text will appear -->      
+            <p class="intro">
+                Hello,<br/>
+                Thank you for visiting my portfolio. I am currently updating the site to enhance its design and functionality. In the meantime, you can download my resume or contact me directly for any opportunities that align with my profile. I look forward to connecting!
+            </p>
+
+            <div class="info-card">
+                <h2 class="info-title">Key Information</h2>
+                <p>Open to opportunities in: <strong>Mexico – USA – South America 📍</strong></p>
+                <p>
+                    <strong>Bachelor’s in Law, Economics &amp; Business Management</strong><br>
+                    Specialized in International Business &amp; Management 🎓
+                </p>
+                <p>
+                    <strong>Master’s in International Logistics, Procurement &amp; Supply Chain Management</strong><br>
+                    Focus on International Projects Management &amp; Tender Coordination 👨‍🎓
+                </p>
+                <p><strong>French:</strong> Native</p>
+                <p><strong>Spanish (Mexican):</strong> Bilingual/Native (C2)</p>
+                <p><strong>English:</strong> Professional/Fluent (C1+)</p>
+                <p><strong>Permanent resident of Mexico with full right to work</strong></p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
