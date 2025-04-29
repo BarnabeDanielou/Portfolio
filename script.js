@@ -1,14 +1,15 @@
 const sentences = [
-    "Portfolio under maintenance...",
-    "Thanks for checking out my portfolio!",
-    "Feel free to reach out."
+    "Portfolio Currently Being Updated 🔧",
+    "Thank you for visiting!",
+    "Feel free to reach out 🙂",
+    "Have a great day!"
   ];
   
   let currentSentence = 0;
   let currentChar = 0;
   let isDeleting = false;
   const typingSpeed = 100; // typing speed per character
-  const deletingSpeed = 50; // speed for deleting
+  const deletingSpeed = 55; // speed for deleting
   const delayBetweenSentences = 1500; // pause before deleting
   const typingElement = document.getElementById("typing-text");
   
